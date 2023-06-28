@@ -225,3 +225,7 @@ def home(request):
     else:
         return redirect("admin")
     return render(request, template, context=context)
+
+#fonction recherche test
+def recherche(request):
+    return render(request, template_name=("base/recherche.html"))
